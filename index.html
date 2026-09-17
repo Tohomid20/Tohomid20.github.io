@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="Personal profile and links website">
+  <title>Tohmid Hasan — Personal Website</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo" aria-label="Home">TH<span>.</span></a>
+
+      <div class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#links">Links</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-tools">
+        <button class="round-btn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">☾</button>
+        <button class="round-btn menu-toggle" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#links">Links</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="status-pill"><span class="pulse-dot"></span> Available for opportunities</div>
+          <p class="kicker">HELLO, I'M</p>
+          <h1 id="name">Tohmid Hasan</h1>
+          <h2>I am a <span class="typing" id="typing"></span><span class="cursor">|</span></h2>
+          <p class="lead" id="bio">
+            I build useful digital experiences, experiment with technology and share what I learn.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#links">Explore my links <span>↗</span></a>
+            <a class="btn btn-ghost" href="#contact">Let's connect <span>✉</span></a>
+          </div>
+
+          <div class="social-row" id="heroSocials" aria-label="Social links"></div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="photo-wrap">
+            <div class="photo-glow"></div>
+            <img id="profile" src="assets/profile.jpg" alt="Your profile photo"
+                 onerror="this.style.display='none'; document.getElementById('fallback').style.display='grid';">
+            <div id="fallback" class="fallback">TH</div>
+            <div class="floating-card card-top"><span>✦</span> Creator</div>
+            <div class="floating-card card-bottom"><span>⌘</span> Building ideas</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue"><span></span> Scroll to explore</div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">01 — ABOUT</p>
+          <h2>A little <span>about me.</span></h2>
+        </div>
+        <p>Everything here is editable from one simple configuration file.</p>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass-card about-card reveal">
+          <div class="mini-icon">✦</div>
+          <h3>Who I am</h3>
+          <p id="aboutText">
+            I'm a curious person who enjoys learning, creating projects and turning ideas into simple digital experiences.
+          </p>
+          <div class="quote">“Build something useful. Keep learning.”</div>
+        </article>
+
+        <div class="facts-grid" id="facts"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="links">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">02 — CONNECT</p>
+          <h2>Find me <span>online.</span></h2>
+        </div>
+        <p>One place for all the links you want people to find.</p>
+      </div>
+      <div class="link-grid" id="linksGrid"></div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">03 — PROJECTS</p>
+          <h2>Things I've <span>built.</span></h2>
+        </div>
+        <p>Showcase your best work, experiments or favorite projects.</p>
+      </div>
+      <div class="project-grid" id="projectsGrid"></div>
+    </section>
+
+    <section class="cta container reveal" id="contact">
+      <div class="cta-inner contact-premium">
+        <div class="contact-copy">
+          <div class="contact-badge"><span class="pulse-dot"></span> GET IN TOUCH</div>
+          <p class="kicker">04 — CONTACT</p>
+          <h2>Have an idea?<br><span>Let's create something great.</span></h2>
+          <p id="contactText">Whether it's a project, collaboration or just a friendly hello — I'd love to hear from you.</p>
+          <div class="contact-email"><span>✉</span><span id="contactEmail">tohomid20@gmail.com</span></div>
+        </div>
+        <div class="contact-action">
+          <div class="contact-orb">✦</div>
+          <a class="btn btn-primary big contact-btn" id="emailLink" href="mailto:tohomid20@gmail.com">Send me a message <span>↗</span></a>
+          <p>Usually replies as soon as possible.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <a href="#home" class="logo">TH<span>.</span></a>
+        <p id="footerRole">Web Developer</p>
+      </div>
+      <div class="footer-socials" id="footerSocials"></div>
+    </div>
+    <div class="container footer-bottom">
+      <span id="copyright"></span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
