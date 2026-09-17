@@ -1,0 +1,16 @@
+{
+  "name": "Tohmid Hasan — Personal Website",
+  "short_name": "Tohmid Hasan",
+  "description": "Tohmid Hasan's personal website and social links.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08060d",
+  "theme_color": "#9b5cff",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
